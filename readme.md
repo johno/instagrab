@@ -1,5 +1,7 @@
 # instagrab [![Build Status](https://secure.travis-ci.org/johnotander/instagrab.png?branch=master)](https://travis-ci.org/johnotander/instagrab) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
+__Work in progress__
+
 Grab images from instagram
 
 ## Installation
@@ -11,9 +13,11 @@ npm install --save instagrab
 ## Usage
 
 ```javascript
-var instagrab = require('instagrab')
+const instagrab = require('instagrab')
 
-instagrab()  // => true
+instagrab('awesome', imgIds => {
+  console.log(imgIds)
+})
 ```
 
 ## License
