@@ -1,8 +1,8 @@
 'use strict'
 const Nightmare = require('nightmare')
-const nightmare = Nightmare({ show: true })
+const nightmare = Nightmare()
 
-const instagrab = (tag, cb) => {
+module.exports = (tag, cb) => {
   nightmare
     .goto(`https://www.instagram.com/explore/tags/${tag}/`)
     .wait('main')
@@ -15,9 +15,3 @@ const instagrab = (tag, cb) => {
       console.error('FUCK', error);
     })
 }
-
-instagrab('socks', doc => {
-  console.log(doc)
-})
-
-module.exports = instagrab

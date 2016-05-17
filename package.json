@@ -8,13 +8,14 @@
     "index.js"
   ],
   "scripts": {
-    "test": "ava"
+    "test": "ava --timeout=10s"
   },
   "repository": "johnotander/instagrab",
   "keywords": [],
   "license": "MIT",
   "dependencies": {
     "get-img-src": "^1.0.0",
+    "is-present": "^1.0.0",
     "nightmare": "^2.4.0"
   },
   "devDependencies": {
