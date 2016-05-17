@@ -13,7 +13,10 @@
   "repository": "johnotander/instagrab",
   "keywords": [],
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "get-img-src": "^1.0.0",
+    "nightmare": "^2.4.0"
+  },
   "devDependencies": {
     "ava": "*"
   }
